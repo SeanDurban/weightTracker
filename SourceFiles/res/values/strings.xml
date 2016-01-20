@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Weight Tracker</string>
+    <string name="mainMenuText">Main Menu</string>
+    <string name="recordNewWeighinText">Record new Weigh-in</string>
+    <string name="recordMMText">Records</string>
+    <string name="statsMMText">Statistics</string>
+    <string name="settingsMMText">Settings</string>
+    <string name="enterNewRWText">Enter new</string>
+    <string name="weighinRWText">Weigh in :</string>
+    <string name="unitsRWText">Kg</string>
+    <string name="addRWText">Add</string>
+    <string name="goalWeightRWText">Goal Weight:</string>
+    <string name="statsHeading">Statistics</string>
+    <string name="avgWeightText">Average Weight:</string>
+    <string name="highestWeightText">Highest Weight:</string>
+    <string name="lowestWeightText">Lowest Weight:</string>
+    <string name="averageChangeText">Average Change:</string>
+    <string name="totalWeighinsText">Total Weigh ins:</string>
+    <string name="totalWeightLoss">Total Weight loss:</string>
+    <string name="weightToGoalText">Weight to Goal:</string>
+    <string name="progressToGoalText">Progress to Goal:</string>
+    <string name="recordNewWeighinTextLand">Record new Weigh-in</string>
+    <string name="recordsMMTextLand">Records</string>
+    <string name="statsMMTextLand">Statistics</string>
+    <string name="settingsMMTextLand">Settings</string>
+    <string name="settingsTitle">Settings</string>
+    <string name="deleteDatabaseText">Delete Database</string>
+    <string name="unitsText">Units</string>
+    <string name="unitKGText">Kilograms</string>
+    <string name="unitsLbText">Pounds</string>
+    <string name="goalText">Goal</string>
+    <string name="goalLossText">Loss</string>
+    <string name="goalGainText">Gain</string>
+    <string name="goalWeightText">Goal Weight:</string>
+    <string name="addButtonText">Add</string>
+    <string name="clearDatabaseText">Clear Database</string>
+</resources>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="10dp"
+    tools:context="com.seandurban.apps.simpleweighttracker.Settings"
+    android:id="@+id/unitsSwitch"
+    android:background="#faf7f7">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/settingsTitle"
+        android:id="@+id/settingsTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clearDatabaseText"
+        android:id="@+id/button"
+        android:onClick="clearDatabase"
+        android:background="@drawable/btn_red"
+        style="@style/ButtonText"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/settingsTitle"
+        android:layout_centerHorizontal="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unitKGText"
+        android:id="@+id/kgButton"
+        android:layout_marginTop="50dp"
+        android:checked="true"
+        android:layout_below="@+id/button"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:onClick="setUnitsKg"
+        android:shadowColor="#000000" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unitsLbText"
+        android:id="@+id/lbButton"
+        android:checked="false"
+        android:onClick="setUnitsLb"
+        android:clickable="true"
+        android:layout_alignTop="@+id/kgButton"
+        android:layout_toRightOf="@+id/settingsTitle"
+        android:layout_toEndOf="@+id/settingsTitle" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/goalLossText"
+        android:id="@+id/lossButton"
+        android:layout_marginTop="41dp"
+        android:checked="true"
+        android:onClick="setGoalLoss"
+        android:layout_below="@+id/kgButton"
+        android:layout_alignLeft="@+id/kgButton"
+        android:layout_alignStart="@+id/kgButton" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/goalGainText"
+        android:id="@+id/gainButton"
+        android:checked="false"
+        android:onClick="setGoalGain"
+        android:layout_alignBottom="@+id/lossButton"
+        android:layout_alignLeft="@+id/lbButton"
+        android:layout_alignStart="@+id/lbButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/unitsText"
+        android:id="@+id/unitsText"
+        android:layout_alignTop="@+id/kgButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/kgButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/goalText"
+        android:id="@+id/goalText"
+        android:layout_alignParentStart="true"
+        android:layout_alignLeft="@+id/kgButton"
+        android:layout_alignTop="@+id/lossButton"
+        android:layout_below="@+id/unitsText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/goalInput"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/settingsTitle"
+        android:layout_alignStart="@+id/settingsTitle"
+        android:width="75dp"
+        android:visibility="visible"
+        android:layout_below="@+id/lossButton"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/goalWeightText"
+        android:id="@+id/goalWeighText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/goalText"
+        android:layout_marginTop="55dp"
+        android:layout_alignBottom="@+id/goalInput" />
+
+    <Button
+        style="@style/ButtonText"
+        android:background="@drawable/btn_red"
+        android:textSize="11sp"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:text="@string/addButtonText"
+        android:id="@+id/goalWeightButton"
+        android:layout_toRightOf="@+id/settingsTitle"
+        android:onClick="goalWeightAdded"
+        android:textAllCaps="false"
+        android:layout_alignRight="@+id/lbButton"
+        android:layout_alignEnd="@+id/lbButton"
+        android:layout_alignBottom="@+id/goalInput" />
+
+</RelativeLayout>

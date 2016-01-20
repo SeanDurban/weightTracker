@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="10dp"
+    tools:context="com.seandurban.apps.simpleweighttracker.MainMenu"
+    android:background="#292929"
+    style="@style/Widget.AppCompat.ButtonBar"
+    android:gravity="top">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/mainMenuText"
+        android:id="@+id/mainMenuText"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:layout_margin="12dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="@string/recordNewWeighinText"
+        android:id="@+id/recordButton"
+        android:layout_below="@+id/mainMenuText"
+        android:layout_centerHorizontal="true"
+        android:onClick="recordOnClick"
+        android:background="@drawable/btn_green"
+        style="@style/ButtonText"
+        android:layout_margin="12dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="@string/recordMMText"
+        android:id="@+id/recordsButton"
+        android:layout_below="@+id/recordButton"
+        android:onClick="recordsOnClick"
+        android:background="@drawable/btn_red"
+        style="@style/ButtonText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="left"
+        android:layout_margin="12dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="@string/settingsMMText"
+        android:id="@+id/settingsButton"
+        android:onClick="settingsOnClick"
+        android:background="@drawable/btn_yellow"
+        style="@style/ButtonText"
+        android:layout_below="@+id/statsButton"
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentRight="true"
+        android:layout_margin="12dp"/>
+
+    <Button
+        android:text="@string/statsMMText"
+        android:background="@drawable/btn_blue"
+        style="@style/ButtonText"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/statsButton"
+        android:layout_alignParentBottom="false"
+        android:onClick="statsOnClick"
+        android:layout_below="@+id/recordsButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="12dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dumbellImage"
+        android:src="@drawable/dumbbells2"
+        android:layout_below="@+id/settingsButton"
+        android:layout_toRightOf="@+id/mainMenuText"
+        android:layout_toEndOf="@+id/mainMenuText" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/runnerImage"
+        android:src="@drawable/runer"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="39dp"
+        android:layout_alignRight="@+id/mainMenuText"
+        android:layout_alignEnd="@+id/mainMenuText" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/heartbeatImage"
+        android:src="@drawable/heart64"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/recordButton"
+        android:layout_toLeftOf="@+id/mainMenuText"
+        android:layout_toStartOf="@+id/mainMenuText" />
+
+</RelativeLayout>

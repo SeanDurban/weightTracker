@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.seandurban.apps.simpleweighttracker.Statistics"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/statsHeading"
+        android:id="@+id/statsHeading"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/avgWeightText"
+        android:id="@+id/averageWeightText"
+        android:layout_below="@+id/statsHeading"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="52dp"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/highestWeightText"
+        android:id="@+id/highestWeightText"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/averageWeightText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/lowestWeightText"
+        android:id="@+id/lowestWeightText"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/highestWeightText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/averageChangeText"
+        android:id="@+id/averageChangeText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/lowestWeightText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/totalWeighinsText"
+        android:id="@+id/totalWeighinsText"
+        android:layout_below="@+id/averageChangeText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/averageWeightValue"
+        android:layout_alignTop="@+id/averageWeightText"
+        android:layout_alignStart="@+id/statsHeading"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/averageWeightText" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/highestWeightValue"
+        android:layout_alignTop="@+id/highestWeightText"
+        android:layout_alignLeft="@+id/averageWeightValue"
+        android:layout_alignStart="@+id/averageWeightValue"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/highestWeightText" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/lowestWeightValue"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignLeft="@+id/averageWeightValue"
+        android:layout_alignTop="@+id/lowestWeightText"
+        android:layout_below="@+id/lowestWeightText" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/totalWeighinsValue"
+        android:layout_alignBottom="@+id/totalWeighinsText"
+        android:layout_alignLeft="@+id/averageWeightValue"
+        android:layout_alignTop="@+id/totalWeighinsText" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/averageChangeValue"
+        android:layout_alignTop="@+id/averageChangeText"
+        android:layout_alignLeft="@+id/averageWeightValue"
+        android:layout_below="@+id/averageChangeText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/unitsText"
+        android:layout_below="@+id/statsHeading"
+        android:layout_toEndOf="@+id/statsHeading"
+        android:layout_alignLeft="@+id/averageWeightValue"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/totalWeightChangeText"
+        android:text="@string/totalWeightLoss"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/averageWeightText"
+        android:layout_alignStart="@+id/totalWeighinsText"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/totalWeighinsText" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/totalWeightChangeValue"
+        android:layout_alignLeft="@+id/averageWeightValue"
+        android:layout_alignStart="@id/averageWeightValue"
+        android:layout_below="@+id/totalWeighinsValue"
+        android:layout_alignParentEnd="false"
+        android:layout_toRightOf="@+id/averageWeightValue"
+        android:layout_alignTop="@+id/totalWeightChangeText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/weightToGoalText"
+        android:id="@+id/weightLeftText"
+        android:layout_below="@+id/totalWeightChangeText"
+        android:layout_alignRight="@+id/averageWeightText"
+        android:layout_marginTop="20dp"
+        android:layout_alignStart="@+id/totalWeighinsText" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/weightRemainingValue"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/totalWeighinsValue"
+        android:layout_alignTop="@+id/weightLeftText" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:visibility="visible"
+        android:progress="1"
+        android:max="100"
+        android:layout_below="@+id/progressbarText"
+        android:layout_alignRight="@+id/highestWeightValue"
+        android:layout_alignEnd="@+id/highestWeightValue"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/progressToGoalText"
+        android:id="@+id/progressbarText"
+        android:layout_below="@+id/weightLeftText"
+        android:layout_alignLeft="@+id/progressBar"
+        android:layout_alignStart="@+id/totalWeighinsText"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/progressValue"
+        android:layout_alignTop="@+id/progressbarText"
+        android:layout_alignRight="@+id/weightRemainingValue"
+        android:layout_alignLeft="@+id/weightRemainingValue"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
